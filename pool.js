@@ -6,8 +6,9 @@ var pool=mysql.createPool({
 	port:'3306',
 	user:'root',
 	password:'',
-	database:'svg',
+	database:'watch',
 	connectionLimit:20
 });
 //导出连接池对象
-module.exprots=pool;
+module.exports=pool;
+
