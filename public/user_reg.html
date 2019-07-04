@@ -1,4 +1,97 @@
-<form method="post" action="user/reg">
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>手表在线商城|登录</title>
+  <link rel="stylesheet" href="./css/user_reg.css">
+</head>
+<body>
+<!--  头部  -->
+  <div class="header">
+	  <div class="headers">
+
+		<div class="header_left">
+			<p><img src="./img/reg/time.png">在线时间08:30~21:30<span>欢迎访问钟表专卖商城！</span></p>
+		</div>
+
+		<div class="header_right">
+      <a href="user_login.html"><img src="./img/reg/users.png" class='img1'></a>
+			<a href="#"><img src="./img/reg/carts.png"></a>
+		</div>
+
+		</div>
+  </div>
+
+  <!--  导航条  -->
+	<div class="nav">
+	  <div class="navs">
+
+		<div class="nav_logo">
+			<img src="./img/reg/shopp.png" >
+		</div>
+
+		<div class="_nav">
+			<ul>
+				<li>商城首页</li>
+				<li>所有商品</li>
+				<li>商城动态</li>
+				<li>关于店铺</li>
+				<li>线下门店</li>
+			</ul>
+		</div>
+
+		<div class="nav_seek">
+			<input type="text" name="search" id="seek" placeholder="搜索商品关键字">
+			<a href="#"><img src="./img/reg/searchs.png"></a>
+		</div>
+
+		</div>
+	</div>
+
+
+  <div class="section">
+	  <div class="section_max">
+		 <div class="section_form">
+		   <img src="./img/reg/shopps.png">
+			 <p>登录∣注册</p>
+		   <form method="post" action="user/login">
+       <label for="user" >用户名</label><br>
+			 <input type="text" id="user" name="uname" class="bdr">
+			 <br>
+       <label for="pwd">密码</label><br>
+			 <input type="password" id="pwd" name="upwd" class="bdr">
+			 <br>
+       <label for="pwd">在输入一次密码</label><br>
+			 <input type="password" id="pwd" name="upwd" class="bdr">
+			 <br>
+       <label for="emi">邮箱</label><br>
+			 <input type="password" id="emi" name="email" class="bdr">
+			 <br>
+			 <input type="checkbox" name="hobby" id="gou" class="check">
+			 <label for="gou" class="gous">我同意《用户手册》和《保密条款》</label>
+			 <span></span>
+       <input type="submit" value="注册" class="sub">
+			 <a href="user_login.html"><p class="log">已有账号了？请登录</p></a>
+      </form> 
+      <p class="qq">第三方账号登录：<a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&client_id=101477621&redirect_uri=https%3A%2F%2Fsso.e.qq.com%2Fpassport%3Fsso_redirect_uri%3Dhttp%253A%252F%252Funion.qq.com%252F%26service_tag%3D14&scope=get_user_info" target="_blank">
+			<img src="./img/reg/qqs.png" ></a></p>
+		 </div>
+		</div>
+  </div>
+
+  <div class="footer">
+		<div class="footers">
+			<h3>用户注册/登录说明</h3>
+      <p>1.实际使用之前，需配置用户管理组件中的相关邮件。详情请参考教程：《用户管理中相关邮件的配置》</p>
+      <p>2.新用户注册后的审核方式有三种：自动核准、邮件激活、需要管理员批准（即人工审核），详情可参考教程《如何设置用户注册后的审核方式》</p>
+		</div>
+  </div>
+</body>
+</html>
+
+
+
+<!-- <form method="post" action="user/reg">
 编号：<input type="text" name="uid"><br>
 用户名：<input type="text" name="uname"><br>
 密码：<input type="password" name="upwd"><br>
@@ -7,4 +100,4 @@
 真实姓名：<input type="text" name="user_name"><br>
 性别：<input type="text" name="gender"><br>
 <input type="submit">
-</form>
+</form> -->
