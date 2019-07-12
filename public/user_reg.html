@@ -54,25 +54,25 @@
 		 <div class="section_form">
 		   <img src="./img/reg/shopps.png">
 			 <p>登录∣注册</p>
-		   <form method="post" action="user/login">
-       <label for="user" >用户名</label><br>
-			 <input type="text" id="user" name="uname" class="bdr">
+<!-- 		   <form method="post" action="user/login"> -->
+       <label for="user">用户名</label><br>
+			 <input type="text" id="uname"  class="bdr" onblur="add()">
 			 <br>
        <label for="pwd">密码</label><br>
-			 <input type="password" id="pwd" name="upwd" class="bdr">
+			 <input type="password" id="upwd"  class="bdr">
 			 <br>
-       <label for="pwd">在输入一次密码</label><br>
-			 <input type="password" id="pwd" name="upwd" class="bdr">
+       <label for="pwd">确认密码</label><br>
+			 <input type="password" id="pwd1"  class="bdr">
 			 <br>
        <label for="emi">邮箱</label><br>
-			 <input type="password" id="emi" name="email" class="bdr">
+			 <input type="email" id="uemail"  class="bdr">
 			 <br>
 			 <input type="checkbox" name="hobby" id="gou" class="check">
 			 <label for="gou" class="gous">我同意《用户手册》和《保密条款》</label>
 			 <span></span>
-       <input type="submit" value="注册" class="sub">
+			 <button onclick="show()" class="sub" id="button1">注册</button>
 			 <a href="user_login.html"><p class="log">已有账号了？请登录</p></a>
-      </form> 
+<!--       </form>  -->
       <p class="qq">第三方账号登录：<a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&client_id=101477621&redirect_uri=https%3A%2F%2Fsso.e.qq.com%2Fpassport%3Fsso_redirect_uri%3Dhttp%253A%252F%252Funion.qq.com%252F%26service_tag%3D14&scope=get_user_info" target="_blank">
 			<img src="./img/reg/qqs.png" ></a></p>
 		 </div>
@@ -90,7 +90,39 @@
 </html>
 
 
-
+<script>
+ function show(){
+	 var name=uname.value;
+	 var pwd=upwd.value;
+	 var email=uemail.value;
+	 var xhr=new XMLHttpRequest();
+	 xhr.open("post","/user/reg",true);
+	 var formadta="uname="+name+"&upwd="+pwd+"&email="+email;
+	 xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+	 xhr.send(formadta);
+	 xhr.onreadystatechange=function(){
+		if(xhr.readyState==4&&xhr.status==200){
+			var result=xhr.responseText;
+			alert(result);
+		}
+	 }
+}
+ function add(){
+	var name=uname.value;
+	var xhr=new XMLHttpRequest();
+	xhr.open("get","/user/regname/"+name,true);
+	xhr.send();
+	xhr.onreadystatechange=function(){
+		if(xhr.readyState==4&&xhr.status==200){
+			var result=xhr.responseText;
+			if(result=="1"){
+				uname.value="存在";
+				button1.disabled=true;
+			}
+		}
+	}
+ }
+</script>
 <!-- <form method="post" action="user/reg">
 编号：<input type="text" name="uid"><br>
 用户名：<input type="text" name="uname"><br>

@@ -54,21 +54,23 @@
 		 <div class="section_form">
 		   <img src="./img/reg/shopps.png">
 			 <p>登录∣注册</p>
-		   <form method="post" action="user/login">
-       <label for="user" >手机/用户/邮箱</label><br>
-			 <input type="text" id="user" name="uname" class="bdr">
+<!-- 	<form method="post" action="user/login">   -->
+       <label for="user">手机/用户/邮箱</label><br>
+			 <input type="text" id="uname"  class="bdr" onblur="add1()" onfocus="add2()"><span id="anname"></span>
 			 <br>
 
        <label for="pwd">密码</label><br>
-			 <input type="password" id="pwd" name="upwd" class="bdr">
+			 <input type="password" id="upwd"  class="bdr" onblur="num1()" onfocus="num2()"><span id="anupwd"></span>
 			 <br>
 
 			 <input type="checkbox" name="hobby" id="gou" class="check">
 			 <label for="gou" class="gous">记住我（请在私人设备上使用此功能）</label>
 			 <span></span>
-       <input type="submit" value="登录" class="sub">
+<!--  <input type="submit" value="登录" class="sub"> -->
+			 <button onclick="show()" class="sub">登录</button>
+
 			 <a href="user_reg.html"><p class="log">注册</p></a>
-      </form> 
+<!--  </form>  -->
       <p class="qq">第三方账号登录：<a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&client_id=101477621&redirect_uri=https%3A%2F%2Fsso.e.qq.com%2Fpassport%3Fsso_redirect_uri%3Dhttp%253A%252F%252Funion.qq.com%252F%26service_tag%3D14&scope=get_user_info" target="_blank">
 			<img src="./img/reg/qqs.png" ></a></p>
 		 </div>
@@ -84,3 +86,57 @@
   </div>
 </body>
 </html>
+
+<script>
+//登录验证
+  function add1(){
+		var name=uname.value;
+		if(name==""){
+			anname.innerHTML="用户名不能为空";
+		}else{
+		anname.innerHTML="";
+		}
+  }
+
+  function add2(){
+		var name=uname.value;
+		if(name==""){
+		anname.innerHTML="用户名3~12位";
+		}
+  }
+//密码验证
+  function num1(){
+		var pwd=upwd.value;
+		if(pwd==""){
+			anupwd.innerHTML="密码不能为空";
+		}else{
+			anupwd.innerHTML="";
+		}
+  }
+
+  function num2(){
+		var pwd=upwd.value;
+		if(pwd==""){
+		anupwd.innerHTML="密码6~18位";
+		}
+  }
+//xhr四步骤
+  function show(){
+	var name=uname.value;
+	var pwd=upwd.value;
+	var xhr=new XMLHttpRequest();
+	xhr.onreadystatechange=function(){
+		if(xhr.readyStase==4&&xhr.status==200){
+			var result=xhr.responseText;
+			alert(result);
+		}
+	}
+	xhr.open("post","/user/login",true);
+	//创建请求主体，把数据放到请求主体
+	var formdata="uname="+name+"&upwd="+pwd;
+	//由于要传递整个请求主体
+	//而请求主体中有特殊字符，必须修改请求头
+	xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");	
+	xhr.send(formdata)
+ }
+</script>
