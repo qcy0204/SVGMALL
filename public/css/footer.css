@@ -1,0 +1,71 @@
+/* 底部 */
+.navbar-toggler-icon{width: 0.5rem;height: 0.5rem;}
+.footers{
+	width:100%;
+	background:#101820
+}
+.footer__title{font-size:15px}
+.navbar{padding:0 1rem}
+.navbar-toggler{margin-left: auto}
+.made-menu{
+	font-size:12px;
+}
+.hx{border-bottom: 1px solid #4A535C}
+.made-menu a{color:#607285;text-decoration: none}
+.made-menu a:hover{color:white;}
+
+
+
+/* y右边 */
+.ul_af::after{
+	content: "";
+	display: block;
+	clear: both;
+	}
+.footer_title_right{
+	padding-left: 80px;
+	border-left:1px solid #353D46;
+}
+
+.img_w{width:20px;height:20px}
+.ico_c{
+	font-size:14px;
+	color:#8A8A8A
+}
+.dw{
+	width:50px;height:20px;
+}
+
+.footer__title{
+	letter-spacing:3px;
+}
+
+.footer__titles{
+	color:#3B4857;
+	letter-spacing:1px;
+    font-size: 12px
+}
+
+.btn_emla::after{
+	content: "";
+	display: block;
+	clear: both;
+	}
+.input-text,.btn-email{height:32px;background:#233445;}
+
+.btn-email{
+	width:32px;
+}
+.btn-email span img{width:20px;height:20px;}
+
+
+/* 底部版权 */
+.footer__bottom{border-top:1px solid #343D46}
+.breadcrumb{background:#101820 }
+.breadcrumb-item + .breadcrumb-item::before{content: "|";}
+.breadcrumb{margin: 0 auto}
+.made-menus li a{font-size:12px;color:#607285}
+.made-menus li a:hover,.copyright-list a:hover{color:#607285;text-decoration: none}
+.copyright-list img{vertical-align:middle}
+.copyright-list a,p{font-size:12px;color:#607285}
+.copyright-list>p{letter-spacing:1px}
