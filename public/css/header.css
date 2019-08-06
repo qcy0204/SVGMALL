@@ -1,55 +1,50 @@
 /* 所有大图片 */
 .header img,.widget-marv img,.widget-marv1 img{max-width:100%;min-width:100%;}
 /*首页导航*/
-
-
-.headers{width:100%;position:absolute;top:20px;}
-.header_img{width:300px;margin:0 auto;}
-.header_img img{width:300px;}
-
+.headers{top:20px;}
+.header_img{width: 22%}
 /*导航条*/
 .nav_bg{
-	position:absolute;top:60px;
+	top:3.75rem;
 	background:rgba(0,14,34,0.2);
 }
-.nav_bg ul li a{font-size:13px;letter-spacing:2px;position:relative;}
+.nav_bg ul li a{font-size:0.81rem;letter-spacing:2px;}
 .nav_bg  a span{
     width:0px;
 	height:2px;
-	margin:0 auto;
-	display:block;
-	position:absolute;
 	top:30px;
 	left:0;
 	right:0;
-	background:white;
 	transition:.5s;
 }
 .nav_bg a:hover span{
 	width:90%;
 }
-.hiadline{
-  width:300px;
-  position:absolute;
-  top:150px;
-  left:50px
-}
+
 /* 导航条\戒指\背景图片文字 */
+.hiadline{
+  width: 50%;
+  height:50%;
+  position:absolute;
+  top:40%;
+  left:5%;
+}
 .hiadline h2, h4, h6, p,.widget-marv-hero__inners h2, h4, h6, p{
 	font-weight:normal;
 	letter-spacing:5px;
 	color:black
 }
-
-.hiadline h2,.widget-marv-hero__inners h2,.widget-marv-hero__inners3 h2,.widget-marv-hero__inners2 h2{font-size:35px;letter-spacing:0}
-.hiadline h4,.widget-marv-hero__inners h4,.widget-marv-hero__inners3 h4,.widget-marv-hero__inners2 h4{font-size:20px}
-.hiadline h6,.widget-marv-hero__inners h6,.widget-marv-hero__inners3 h6,.widget-marv-hero__inners2 h6{font-size:16px}
-.hiadline p,.widget-marv-hero__inners p{
-    color:black;
-	width:150px;
-	height:45px;
+.hiadline h2{font-size:2.1rem;letter-spacing:0}
+.hiadline h4{font-size:1.25rem;}
+.hiadline h6{font-size:1rem;}
+.hiadline a{ 
+	color:black;
+	text-decoration: none;
+	font-size: 0.8rem;
+	width:9.3rem;
+	height:2.8rem;
 	border:1px solid #000;
 	line-height:45px;
 	border-radius:3px;
-	margin:30px auto 0;
+	
 }
