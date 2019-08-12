@@ -17,9 +17,15 @@
     <div class="header position-relative">
        <img src="./img/DW/cvd-kv-pc.jpg">
 
-        <div class="headers w-100 position-absolute">
+        <div class="headers w-100 position-absolute position-relative">
             <div class="header_img m-auto d-sm-none d-md-block">
                 <a href=""><img src="./img/DW/logo.svg"></a>
+            </div>
+            <div class="header_user position-absolute">
+               <span class="d-block" ><img src="./img/reg/users.png" alt=""></span> 
+            </div>
+            <div class="header_cart  position-absolute">
+               <span class="d-block" id="cartimg"><img src="./img/reg/carts.png" alt=""></span> 
             </div>
         </div> 
         
@@ -45,6 +51,50 @@
             <a class="d-block m-auto text-center" href="">立即探索</a>
         </div> 
     </div>
+     <!-- 购物车 -->
+    <div class="mini-cart position-fixed"  data-cart="cart">  <!-- id="span_cart"  -->
+       <div class="minicart__header">
+           <h4 class="text-center my-4 "><span  class="d-block cart-close" data-close="close">X</span>购物车</h4>
+           <P class="text-center border-top pt-5">您的购物车中没有商品</P>
+           <span class="d-block button px-5 text-center m-auto">
+            <span class="atc-right d-block mt-3">继续购买</span>
+           </span>
+       </div>
+     </div>
 </div>
+<script>
+//  DOM四步骤
+// 1.获取点击的事件
+var cartimg=document.getElementById("cartimg");
+// 2.绑定事件
+cartimg.onclick=function(){
+    var cartimg=this;
+  // 3.查询要修改的元素
+    console.log(cartimg.textContent)
+   // var span_cart=document.getElementById("span_cart");
+    var span_cart=document.querySelector("[data-cart=cart]");
+  // 4修改元素属性
+     if(cartimg.textContent==""){
+         span_cart.style.display="block";
+        
+     }
+}
+//1.获取点击的事件
+//var XX=document.getElementById("XX");
+var close=document.querySelector("[data-close=close]");
+// 2.绑定事件
+close.onclick=function(){
+    var close=this;
+    // 3.查询要修改的元素
+   // var span_cart=document.getElementById("span_cart");
+    var span_cart=document.querySelector("[data-cart=cart]");
+    // 4修改元素属性
+    if(close.textContent=="X"){
+        span_cart.style.display="none"; 
+        
+    }
+}
+
+</script>
 </body>
 </html>

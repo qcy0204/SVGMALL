@@ -3,6 +3,11 @@
 /*首页导航*/
 .headers{top:20px;}
 .header_img{width: 22%}
+/* 图标 */
+.header_user span,.header_cart span{width: 30px;height: 36px;}
+.header_user,.header_cart{top:0px;right: 100px;}
+.header_cart{right: 50px;}
+
 /*导航条*/
 .nav_bg{
 	top:3.75rem;
@@ -48,3 +53,20 @@
 	border-radius:3px;
 	
 }
+/* 购物车 */
+.mini-cart{
+	width: 100%;
+	max-width: 475px;
+	height: 600px;
+	background: #fff;
+	right: 0;
+	top: 0;
+	z-index: 105;
+	transition:all .5s linear;
+	display: none
+}
+.minicart__header h4{font-size: 16px;}
+.minicart__header p{font-size: 12px;}
+.cart-close{width: 60px;height: 60px;cursor: pointer;position: absolute;}
+.button{background: #000E22;height: 50px;width: 316px;cursor: pointer}
+.atc-right{font-size: 14px;color: #CDBC7A;line-height:50px }

@@ -1,15 +1,22 @@
 <!doctype html>
 <html>
-	<head>
-	  <title>DW手表官网</title>
-		<meta charset='utf-8'>
-		<link rel="stylesheet" href="./css/login.css">
-    <script src="js/jquery-1.8.3.min.js"></script>
-    <script src="js/jquery.luara.0.0.1.min.js"></script> 
-	</head>
-	<body> 
 
-<!-- 导航条 -->
+<head>
+	<title>DW手表官网</title>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./css/comm.css">
+	<link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+
+	<!-- 导航条 -->
+	<!--
 	  <div class="header">
 		  <ul>
 		  	<li><a href="#"><img src="./img/DW/cvd-kv-pc.jpg"></a></li>
@@ -43,381 +50,331 @@
 					<a href=""><p>立即探索</p></a>
 				</div>
       </div>
-
-
-<!--   条栏   -->
-    <div class="widget">
-			<ul>
-				<li><img src="./img/dw_index/1.png"><span>花呗分期</span></li>
-				<li><img src="./img/dw_index/2.png"><span>正品保障</span></li>
-				<li><img src="./img/dw_index/3.png"><span>免运费服务</span></li>
+-->
+	<div class="container-fluid  px-0">
+		<!--   条栏   -->
+		<div>
+			<ul class="widget list-unstyled d-flex justify-content-around my_padding">
+				<li><img class="m-3" src="./img/dw_index/1.png" alt="" /><span>花呗分期</span></li>
+				<li><img class="m-3" src="./img/dw_index/2.png" alt="" /><span>正品保障</span></li>
+				<li><img class="m-3" src="./img/dw_index/3.png" alt="" /><span>免运费服务</span></li>
 			</ul>
-    </div>
-<!-- 	1内容：男士手表 -->
-    <div class="section cle">
-		 <h2>为你精选</h2>
-		 <div class="prdouct_img">
-			<ul>
-				<li>
-				 <img src="./img/dw_index/dw00100305_classic_petite_melrose_w36rg.png">
-				 <h5>Classic Petite Melrose</h5>
-				 <span class="product__info-name">36 mm</span>
-				 <span class="product__info-pwd">￥&nbsp;1,490</span>
-				 <span class="btn-label">立即购买</span>
-				</li>
-				<li>
-				 <img src="./img/dw_index/dw00100307_classic_petite_ashfield_b36rg.png">
-				 <h5>Classic Petite Ashfield</h5>
-				 <span class="product__info-name">36 mm</span>
-				 <span class="product__info-pwd">￥&nbsp;1,490</span>
-				 <span class="btn-label">立即购买</span>
-				</li>
-				<li>
-				 <img src="./img/dw_index/cl36-canterbury-rg_2.png">
-         <h5>Classic Canterbury</h5>
-				 <span class="product__info-name">36 mm</span>
-				 <span class="product__info-pwd">￥&nbsp;1,250</span>
-				 <span class="btn-label">立即购买</span>
-				</li>
-				<li>
-				 <img src="./img/dw_index/dw00100313_classic_petite_dover_w28rg.png">
-				 <h5>Classic Dover</h5>
-				 <span class="product__info-name">36 mm</span>
-				 <span class="product__info-pwd">￥&nbsp;1,350</span>
-				 <span class="btn-label">立即购买</span>
-				 </li>
-			</ul>
-		 </div>
-    </div>
-		<table></table>
-<!-- 	2内容：女生手镯 -->
-    <div class="widget-marv cle">
+		</div>
+
+	<!-- 	1内容：男士手表 -->
+	<div class="carousel" data-ride="carousel" id="banner">
+    <div class="carousel-inner">
+     <div class="carousel-item active">
+       <div class="row mx-0 section">
+							<div class="col-12 mt-4 mb-3">
+								<h2 class="text-center mt-3 mb-3">为你精选</h2>
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-3 px-0 prdouct_img">
+								<img src="./img/dw_index/dw00100305_classic_petite_melrose_w36rg.png">
+								<h5 class="text-center">Classic Petite Melrose</h5>
+								<span class="d-block text-center">36 mm</span>
+								<span class="d-block text-center mb-3">￥&nbsp;1,490</span>
+								<span class="btn-label d-block text-center m-auto btn border">立即购买</span>
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-3 px-0 prdouct_img">
+								<img src="./img/dw_index/dw00100307_classic_petite_ashfield_b36rg.png">
+								<h5 class="text-center">Classic Petite Ashfield</h5>
+								<span class="d-block text-center">36 mm</span>
+								<span class="d-block text-center mb-3">￥&nbsp;1,490</span>
+								<span class="btn-label d-block text-center m-auto btn border">立即购买</span>
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-3 px-0 prdouct_img">
+								<img src="./img/dw_index/cl36-canterbury-rg_2.png">
+								<h5 class="text-center">Classic Canterbury</h5>
+								<span class="d-block text-center">36 mm</span>
+								<span class="d-block text-center mb-3">￥&nbsp;1,250</span>
+								<span class="btn-label d-block text-center m-auto btn border">立即购买</span>
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-3 px-0 prdouct_img">
+								<img src="./img/dw_index/dw00100313_classic_petite_dover_w28rg.png">
+								<h5 class="text-center">Classic Dover</h5>
+								<span class="d-block text-center">36 mm</span>
+								<span class="d-block text-center mb-3">￥&nbsp;1,350</span>
+								<span class="btn-label d-block text-center m-auto btn border">立即购买</span>
+							</div>
+		  	</div>
+	   </div>
+		<div class="carousel-item">
+				<div class="row mx-0 section">
+						<div class="col-12 mt-4 mb-3">
+								<h2 class="text-center mt-3 mb-3">为你精选</h2>
+							</div>
+						<div class="col-sm-6 col-md-6 col-lg-3 px-0 prdouct_img">
+							<img src="./img/dw_index/dw00100313_classic_petite_dover_w28rg.png">
+							<h5 class="text-center">Classic Bracelet Satin White</h5>
+							<span class="d-block text-center">28 mm</span>
+							<span class="d-block text-center mb-3">￥&nbsp;1,090</span>
+							<span class="btn-label d-block text-center m-auto btn border">立即购买</span>
+						</div>
+						<div class="col-sm-6 col-md-6 col-lg-3 px-0 prdouct_img">
+							<img src="./img/dw_index/dw00100314_classic_petite_dover_b28rg.png">
+							<h5 class="text-center">Classic Bracelet</h5>
+							<span class="d-block text-center">28 mm</span>
+							<span class="d-block text-center mb-3">￥&nbsp;490</span>
+							<span class="btn-label d-block text-center m-auto btn border">立即购买</span>
+						</div>
+						<div class="col-sm-6 col-md-6 col-lg-3 px-0 prdouct_img">
+							<img src="./img/dw_index/dw_classic_petite_melrose_28rg_6.png">
+							<h5 class="text-center">Classic Bracelet Satin White</h5>
+							<span class="d-block text-center">28 mm</span>
+							<span class="d-block text-center mb-3">￥&nbsp;1,290</span>
+							<span class="btn-label d-block text-center m-auto btn border">立即购买</span>
+						</div>
+						<div class="col-sm-6 col-md-6 col-lg-3 px-0 prdouct_img">
+							<img src="./img/dw_index/dw_classic_petite_sterling_b28s.png">
+							<h5 class="text-center">Classic Ring</h5>
+							<span class="d-block text-center">28 mm</span>
+							<span class="d-block text-center mb-3">￥&nbsp;1,290</span>
+							<span class="btn-label d-block text-center m-auto btn border">立即购买</span>
+						</div>
+					</div>
+		</div>
+      <a href="#banner" data-slide="prev" class="mx-3 carousel-control-prev border bg-dark">
+					<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a href="#banner" data-slide="next" class="mx-3 carousel-control-next border bg-dark">
+					<span class="carousel-control-next-icon"></span>
+			</a>
+			<!-- 	<ul class="carousel-indicators d-sm-block d-md-none">
+					<li data-target="#banner" data-slide-to="0" class="active"></li>
+					<li data-target="#banner" data-slide-to="1"></li>
+					<li data-target="#banner" data-slide-to="2"></li>
+					<li data-target="#banner" data-slide-to="3"></li>
+			</ul>-->
+	</div>
+</div>
+
+		<!-- 大图片 -->
+		<div class="widget-marv  position-relative mt-5">
 			<img src="./img/dw_index/cvd-2-pc.jpg">
-			<div class="widget-marv-hero__inner">
-				<div class="widget-marv-hero__inners">
+			<div class="widget-marv-hero__inner position-absolute  w-50">
+				<div class="widget-marv-hero__inners m-auto text-center">
 					<h2>SLIM BRACLET</h2>
 					<h4>夏日出彩 耀饰焕新</h4>
 					<h6>7月10日限量发售</h6>
-					<a href=""><p>前往选购</p></a>
+					<p><a href="#">前往选购</a></p>
 				</div>
-      </div>
-
-			<div class="prdouct_img">
-			<ul>
-				<li>
-				 <img src="./img/dw_index/dw0040003x_classic_bracelet_slim_small_rg_satin_white.png">
-				 <h5>Classic Bracelet Satin White</h5>
-				 <span class="product__info-name">S</span>
-				 <span class="product__info-pwd">￥&nbsp;590</span>
-				 <span class="btn-label">立即购买</span>
-				</li>
-				<li>
-				 <img src="./img/dw_index/dw_bangle_small_rg_shadow.png">
-				 <h5>Classic Bracelet</h5>
-				 <span class="product__info-name">S</span>
-				 <span class="product__info-pwd">￥&nbsp;490</span>
-				 <span class="btn-label">立即购买</span>
-				</li>
-				<li>
-				 <img src="./img/dw_index/dw00400007_classic_bracelet_rg_small_3.png">
-         <h5>Classic Bracelet Satin White</h5>
-				 <span class="product__info-name">S</span>
-				 <span class="product__info-pwd">￥&nbsp;790</span>
-				 <span class="btn-label">立即购买</span>
-				</li>
-				<li>
-				 <img src="./img/dw_index/dw00400017_classic_ring_52_rg.png">
-				 <h5>Classic  Ring</h5>
-				 <span class="product__info-name">5 2 #</span>
-				 <span class="product__info-pwd">￥&nbsp;290</span>
-				 <span class="btn-label">立即购买</span>
-				 </li>
-			</ul>
-		 </div>
-    </div>
-<!-- 3内容：女生手表 -->
-    <div class="widget-marv cle">
-			<img src="./img/dw_index/cvd-3-pc.jpg">
-			<div class="widget-marv-hero__inner">
-				<div class="widget-marv-hero__inners">
-					<h2>THE NEW DOVER</h2>
-					<h4>新派纯白 质感织纹</h4>
-					<h6>上市时间：7月10日</h6>
-					<a href=""><p>前往选购</p></a>
-				</div>
-      </div>
-			<div class="prdouct_img">
-			<ul>
-				<li>
-				 <img src="./img/dw_index/dw00100313_classic_petite_dover_w28rg.png">
-				 <h5>Classic Bracelet Satin White</h5>
-				 <span class="product__info-name">28 mm</span>
-				 <span class="product__info-pwd">￥&nbsp;1,090</span>
-				 <span class="btn-label">立即购买</span>
-				</li>
-				<li>
-				 <img src="./img/dw_index/dw00100314_classic_petite_dover_b28rg.png">
-				 <h5>Classic Bracelet</h5>
-				 <span class="product__info-name">28 mm</span>
-				 <span class="product__info-pwd">￥&nbsp;490</span>
-				 <span class="btn-label">立即购买</span>
-				</li>
-				<li>
-				 <img src="./img/dw_index/dw_classic_petite_melrose_28rg_6.png">
-         <h5>Classic Bracelet Satin White</h5>
-				 <span class="product__info-name">28 mm</span>
-				 <span class="product__info-pwd">￥&nbsp;1,290</span>
-				 <span class="btn-label">立即购买</span>
-				</li>
-				<li>
-				 <img src="./img/dw_index/dw_classic_petite_sterling_b28s.png">
-				 <h5>Classic  Ring</h5>
-				 <span class="product__info-name">28 mm</span>
-				 <span class="product__info-pwd">￥&nbsp;1,290</span>
-				 <span class="btn-label">立即购买</span>
-				 </li>
-			</ul>
-		 </div>
-  </div>
-
-<!-- 4内容：男女手表 -->
-  <div class="widget-marv1 cle">
-			<img src="./img/dw_index/190305conventional-2-pc.jpg">
-			<div class="widget-marv-hero__inner2">
-				<div class="widget-marv-hero__inners3">
-					<h2>THE NEW DOVER</h2>
-					<h4>新派纯白 质感织纹</h4>
-					<h6>上市时间：7月10日</h6>
-					<p class="p3"></p>
-					<a href=""><p>男士腕表</p></a>
-					<a href=""><p>女士腕表</p></a>
-					
-				</div>
-      </div>
-    <!-- 	内容	 -->
-			<div class="prdouct_img">
-			<ul>
-				<li>
-				 <img src="./img/dw_index/dw_classic_cornwall_36rg.png">
-				 <h5>Classic Bracelet Satin White</h5>
-				 <span class="product__info-name">40 mm</span>
-				 <span class="product__info-pwd">￥&nbsp;1,450</span>
-				 <span class="btn-label">立即购买</span>
-				</li>
-				<li>
-				 <img src="./img/dw_index/dw_classic_sheffield_b40rg_1.png">
-				 <h5>Classic Bracelet</h5>
-				 <span class="product__info-name">40 mm</span>
-				 <span class="product__info-pwd">￥&nbsp;1,490</span>
-				 <span class="btn-label">立即购买</span>
-				</li>
-				<li>
-				 <img src="./img/dw_index/dw_classic_bristol_b40rg.png">
-         <h5>Classic Bracelet Satin White</h5>
-				 <span class="product__info-name">40 mm</span>
-				 <span class="product__info-pwd">￥&nbsp;1,490</span>
-				 <span class="btn-label">立即购买</span>
-				</li>
-				<li>
-				 <img src="./img/dw_index/cl36-canterbury-rg_2.png">
-				 <h5>Classic  Ring</h5>
-				 <span class="product__info-name">40 mm</span>
-				 <span class="product__info-pwd">￥&nbsp;1,250</span>
-				 <span class="btn-label">立即购买</span>
-				 </li>
-			</ul>
-	  </div>
-  </div>
-
-<!-- 5腕表与腕饰 -->
-    <div class="widget-marv1 cle">
-			<img src="./img/dw_index/190305conventional-4-pc.jpg">
-			<div class="widget-marv-hero__inner2">
-				<div class="widget-marv-hero__inners2">
-					<h2>CLASSIC & CUFF</h2>
-					<h4>经典 成就经典</h4>
-					<h6>表与腕饰，用小小细节放大精彩</h6>
-					<a href=""><p>前往选购</p></a>
-				</div>
-      </div>
-			<div class="prdouct_img">
-			<ul>
-				<li>
-				 <img src="./img/dw_index/classic_black_sheffield_40_rg_classic_ring_rg_64_2.png">
-				 <h5>Classic  Black Sheffield +Ring 60</h5>
-				 <span class="product__info-name">40 mm</span>
-				 <span class="product__info-pwd">￥&nbsp;1,780</span>
-				 <span class="btn-label">立即购买</span>
-				</li>
-				<li>
-				 <img src="./img/dw_index/classic_petite_melrose_w28rg_classic_bracelet_slim_medium_rg_satin_white.png">
-				 <h5>Classic Melrose+Bracelet S</h5>
-				 <span class="product__info-name">28 mm</span>
-				 <span class="product__info-pwd">￥&nbsp;1,780</span>
-				 <span class="btn-label">立即购买</span>
-				</li>
-				<li>
-				 <img src="./img/dw_index/dw00100217_dw00400003.png">
-         <h5>Classic Melrose+Bracelet S</h5>
-				 <span class="product__info-name">28 mm</span>
-				 <span class="product__info-pwd">￥&nbsp;1,780</span>
-				 <span class="btn-label">立即购买</span>
-				</li>
-				<li>
-				 <img src="./img/dw_index/dw00100127_dw00100139.png">
-				 <h5>Classic Black Sheffield</h5>
-				 <span class="product__info-name">40+36 mm</span>
-				 <span class="product__info-pwd">￥&nbsp;2,870</span>
-				 <span class="btn-label">立即购买</span>
-				 </li>
-			</ul>
-		 </div>
-  </div>
-<!-- 日志 -->
-  <div class="widget-marv-hero__media  cle">
-			<img src="./img/dw_index/618preheating-5-pc.jpg">
-			<div class="widget-marv-heromedia__inner">
-					<h2>订单金额满500元可享</h2>
-					<h4>花呗限时6期免息</h4>
-					<h6>活动时间：7月10日-8月7日</h6>
-					<a href=""><p>前往选购</p></a>
 			</div>
-  
-  <!-- 日志内容 -->
- <div class="widget-title">
-		<h2>日志</h2>
-		<h3>DANIEL WELLINGTON的最新情报</h3>
-		<table></table>
-	  <div class="post-image">
-			<ul>
-				<li class="posted-at">
-				  <img src="./img/dw_index/blog-cover-0626.jpg">
-          <h6>2019年7月12日</h6>
-				  <h2>DWLOOKBOOK|夏日新品全球限量首发</h2>
-				  <span>解读你的白色迷情</span>
-				  <p>阅读全部内容</p>
-				</li>
-				<li class="posted-at">
-					<img src="./img/dw_index/blog-cover-20190705-01.jpg">
-					<h6>2019年7月12日</h6>
-				  <h2>DWMOMENTS|《调音师》主角演绎挚爱单品</h2>
-				  <span>解读你的白色迷情</span>
-				  <p>阅读全部内容</p>
-				</li>
-				<li class="posted-at">
-					<img src="./img/dw_index/blog-cover-20190617.jpg">
-					<h6>2019年7月12日</h6>
-				  <h2>DW LOOK BOOK|如何把南法假日穿上身</h2>
-				  <span>解读你的白色迷情</span>
-				  <p>阅读全部内容</p>
-				</li>
-			</ul>
-	  </div>	
-  </div>
- </div>
- 
-<!-- 底部 -->
- <div class="footer cle">
-   <table></table>
-	 <div class="footer__links">
-	  <div class="footer__left">
-		 <div class="footer_title_left cle">
-			 <ul>
-			 	<li><h2>手表</h2></li>
-			 	<li>所有手表</li>
-			 	<li>男士手表</li>
-				<li>女士手表</li>
-			 </ul>
-			 <ul class="u1">
-			  <li><h2>表带</h2></li>
-        <li>选购表带</li>
-			 	<li>更换/调节表带教程</li>
-			 </ul>
-			 <ul class="u1">
-			 	<li><h2>配饰</h2></li>
-			 	<li>手镯</li>
-			 	<li>戒指</li>
-			 </ul>
-			 <ul class="u1">
-			 	<li><h2>关于 DW</h2></li>
-			 	<li>品牌故事</li>
-			 	<li>门店及专柜</li>
-				<li>加入我们</li>
-			 </ul>
-			 </div>
-<!-- 	分隔	 --> 
-     <table></table>
-      <div class="footer_title_lefts">
-			 <ul>
-			 	<li>Classic系列</li>
-				<li>Classic Black系列</li>
-			 	<li>Classic Petite系列</li>
-			 	<li>Dapper系列</li>
-				<li>Classy系列</li>
-				<li>礼品套装</li>
-			 </ul>
-			 <ul class="u2">
-			  <li><h2>定制服务</h2></li>
-        <li>搭配个性套装</li>
-			 </ul>
-			 <ul class="u3">
-			 	<li><h2>购物帮助</h2></li>
-			 	<li>支付方式</li>
-			 	<li>配送服务</li>
-				<li>开具发票</li>
-				<li>保修政策</li>
-			 </ul>
-			 <ul class="u4">
-			 	<li><h2>顾客服务</h2></li>
-			 	<li>常见问题</li>
-			 	<li>订单查询</li>
-				<li>退货规定</li>
-				<li>联系我们</li>
-			 </ul>
-		 </div>
-    </div>
-
-		 <div class="footer_title_right cle">
-			<h2>关注DW <span>会员俱乐部</span></h2>
-			<div class="icon-social-weibo">
-				<ul>
-					<li><img src="./img/dw_index/weixin.png"><span>微博</span></li>
-					<li><img src="./img/dw_index/xinlang.png"><span>微信</span></li>
-					<li><img src="./img/dw_index/DWlogo.png" class="dw"></li>
-				</ul>
-			</div>
-			
-			<h5>订阅最新资讯</h5>
-			<h6>第一时间获取最新资讯、活动邀请及优惠信息。</h6>
-			<input type="text"  placeholder="邮箱地址">
-			<table></table>
-			<button type="submit" title="订阅"  class="btn-email">
-				<span><img src="./img/dw_index/jiantou.png"></span>
-			</button>
-		 </div>
-	 </div>
-  
-<!--  底部版权   -->
-   <div class="footer__bottom">
-		 <div class="made-menu-container">
-			<ul>
-				<li><a href="">使用条款</a></li>
-				<li><a href="">隐私保护政策</a></li>
-				<li><a href="">防伪声明</a></li>
-				<li class="sitemap"><a href="">网站地图</a></li>
-			</ul>
-      <table></table>
-			<div class="copyright-list">
-      <span><img src="./img/dw_index/logo.png"/></span>
-      <a href="#" target="_blank">粤公网安备 44030502000796号</a>
-			<a target="_blank" href="#">粤ICP备15098750号-1M</a>
-			<a target="_blank" href="#">营业执照</a>
-      <p>ALL RIGHTS RESERVED. COPYRIGHT © 丹尼尔惠灵顿贸易（深圳）有限公司</p> 
-		  </div>
-       
-      </div>
 		</div>
-		 
- </div>
-	</body>
+		<!-- 	2内容：女生手镯 -->
+		<div class="row mx-0 section  mt-5">
+			<div class="col-sm-6 col-md-6 col-lg-3 px-0 prdouct_img">
+				<img src="./img/dw_index/dw0040003x_classic_bracelet_slim_small_rg_satin_white.png">
+				<h5 class="text-center">Classic Bracelet Satin White</h5>
+				<span class="d-block text-center">S</span>
+				<span class="d-block text-center mb-3">￥&nbsp;590</span>
+				<span class="btn-label d-block text-center m-auto btn border">立即购买</span>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-3 px-0 prdouct_img">
+				<img src="./img/dw_index/dw_bangle_small_rg_shadow.png">
+				<h5 class="text-center">Classic Bracelet</h5>
+				<span class="d-block text-center">S</span>
+				<span class="d-block text-center mb-3">￥&nbsp;490</span>
+				<span class="btn-label d-block text-center m-auto btn border">立即购买</span>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-3 px-0 prdouct_img">
+				<img src="./img/dw_index/dw00400007_classic_bracelet_rg_small_3.png">
+				<h5 class="text-center">Classic Bracelet Satin White</h5>
+				<span class="d-block text-center">S</span>
+				<span class="d-block text-center mb-3">￥&nbsp;790</span>
+				<span class="btn-label d-block text-center m-auto btn border">立即购买</span>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-3 px-0 prdouct_img">
+				<img src="./img/dw_index/dw00400017_classic_ring_52_rg.png">
+				<h5 class="text-center">Classic Ring</h5>
+				<span class="d-block text-center">5 2 #</span>
+				<span class="d-block text-center mb-3">￥&nbsp;290</span>
+				<span class="btn-label d-block text-center m-auto btn border">立即购买</span>
+			</div>
+		</div>
+
+		<!-- 大图片 -->
+		<div class="widget-marv  position-relative mt-5">
+			<img src="./img/dw_index/cvd-3-pc.jpg">
+			<div class="widget-marv-hero__inner position-absolute w-50">
+				<div class="widget-marv-hero__inners m-auto text-center">
+					<h2>THE NEW DOVER</h2>
+					<h4>新派纯白 质感织纹</h4>
+					<h6>上市时间：7月10日</h6>
+					<a href="">
+						<p>前往选购</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- 3内容：女生手表 -->
+		<div class="row mx-0 section  mt-5">
+			<div class="col-sm-6 col-md-6 col-lg-3 px-0 prdouct_img">
+				<img src="./img/dw_index/dw00100313_classic_petite_dover_w28rg.png">
+				<h5 class="text-center">Classic Bracelet Satin White</h5>
+				<span class="d-block text-center">28 mm</span>
+				<span class="d-block text-center mb-3">￥&nbsp;1,090</span>
+				<span class="btn-label d-block text-center m-auto btn border">立即购买</span>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-3 px-0 prdouct_img">
+				<img src="./img/dw_index/dw00100314_classic_petite_dover_b28rg.png">
+				<h5 class="text-center">Classic Bracelet</h5>
+				<span class="d-block text-center">28 mm</span>
+				<span class="d-block text-center mb-3">￥&nbsp;490</span>
+				<span class="btn-label d-block text-center m-auto btn border">立即购买</span>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-3 px-0 prdouct_img">
+				<img src="./img/dw_index/dw_classic_petite_melrose_28rg_6.png">
+				<h5 class="text-center">Classic Bracelet Satin White</h5>
+				<span class="d-block text-center">28 mm</span>
+				<span class="d-block text-center mb-3">￥&nbsp;1,290</span>
+				<span class="btn-label d-block text-center m-auto btn border">立即购买</span>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-3 px-0 prdouct_img">
+				<img src="./img/dw_index/dw_classic_petite_sterling_b28s.png">
+				<h5 class="text-center">Classic Ring</h5>
+				<span class="d-block text-center">28 mm</span>
+				<span class="d-block text-center mb-3">￥&nbsp;1,290</span>
+				<span class="btn-label d-block text-center m-auto btn border">立即购买</span>
+			</div>
+		</div>
+		<!-- 大图片 -->
+		<div class="widget-marv  position-relative mt-5">
+			<img src="./img/dw_index/190305conventional-2-pc.jpg">
+			<div class="widget-marv-hero__inner position-absolute w-50">
+				<div class="widget-marv-hero__inners m-auto text-center">
+					<h2 class="text-white">CLASSIC PETITE</h2>
+					<h4 class="text-white">钟情你的时刻</h4>
+					<h6 class="text-white">优雅造型，为分分秒秒增添气质</h6>
+					<p class="btn_xg"><a href="" class="text-white ">前往选购</a></p>
+				</div>
+			</div>
+		</div>
+		<!-- 4内容：男女手表 -->
+		<div class="row mx-0 section mt-5">
+			<div class="col-sm-6 col-md-6 col-lg-3 px-0 prdouct_img">
+				<img src="./img/dw_index/dw_classic_cornwall_36rg.png">
+				<h5 class="text-center">Classic Bracelet Satin White</h5>
+				<span class="d-block text-center">40 mm</span>
+				<span class="d-block text-center mb-3">￥&nbsp;1,490</span>
+				<span class="btn-label d-block text-center m-auto btn border">立即购买</span>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-3 px-0 prdouct_img">
+				<img src="./img/dw_index/dw_classic_sheffield_b40rg_1.png">
+				<h5 class="text-center">Classic Bracelet</h5>
+				<span class="d-block text-center">28 mm</span>
+				<span class="d-block text-center mb-3">￥&nbsp;490</span>
+				<span class="btn-label d-block text-center m-auto btn border">立即购买</span>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-3 px-0 prdouct_img">
+				<img src="./img/dw_index/dw_classic_bristol_b40rg.png">
+				<h5 class="text-center">Classic Bracelet Satin White</h5>
+				<span class="d-block text-center">40 mm</span>
+				<span class="d-block text-center mb-3">￥&nbsp;1,490</span>
+				<span class="btn-label d-block text-center m-auto btn border">立即购买</span>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-3 px-0 prdouct_img">
+				<img src="./img/dw_index/cl36-canterbury-rg_2.png">
+				<h5 class="text-center">Classic Ring</h5>
+				<span class="d-block text-center">40 mm</span>
+				<span class="d-block text-center mb-3">￥&nbsp;1,250</span>
+				<span class="btn-label d-block text-center m-auto btn border">立即购买</span>
+			</div>
+		</div>
+
+
+
+		<!-- 大图片 -->
+		<div class="widget-marv  position-relative mt-5">
+			<img src="./img/dw_index/190305conventional-3-pc.jpg">
+			<div class="widget-marv-hero__inner position-absolute w-50 inner_right">
+				<div class="widget-marv-hero__inners m-auto text-center">
+					<h2 class="text-white">CLASSIC & CUFF</h2>
+					<h4 class="text-white">经典 成就经典</h4>
+					<h6 class="text-white">表与腕饰，用小小细节放大精彩</h6>
+					<p class="btn_xg"><a href="" class="text-white">前往选购</a></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- 5腕表与腕饰 -->
+		<div class="row mx-0 section  mt-5">
+			<div class="col-sm-6 col-md-6 col-lg-3 px-0 prdouct_img">
+				<img src="./img/dw_index/classic_black_sheffield_40_rg_classic_ring_rg_64_2.png">
+				<h5 class="text-center">Classic Black Sheffield +Ring 60</h5>
+				<span class="d-block text-center">40 mm</span>
+				<span class="d-block text-center mb-3">￥&nbsp;1,780</span>
+				<span class="btn-label d-block text-center m-auto btn border">立即购买</span>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-3 px-0 prdouct_img">
+				<img src="./img/dw_index/classic_petite_melrose_w28rg_classic_bracelet_slim_medium_rg_satin_white.png">
+				<h5 class="text-center">Classic Melrose+Bracelet S</h5>
+				<span class="d-block text-center">28 mm</span>
+				<span class="d-block text-center mb-3">￥&nbsp;1,780</span>
+				<span class="btn-label d-block text-center m-auto btn border">立即购买</span>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-3 px-0 prdouct_img">
+				<img src="./img/dw_index/dw00100217_dw00400003.png">
+				<h5 class="text-center">Classic Melrose+Bracelet S</h5>
+				<span class="d-block text-center">28 mm</span>
+				<span class="d-block text-center mb-3">￥&nbsp;1,780</span>
+				<span class="btn-label d-block text-center m-auto btn border">立即购买</span>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-3 px-0 prdouct_img">
+				<img src="./img/dw_index/dw00100127_dw00100139.png">
+				<h5 class="text-center">Classic Black Sheffield</h5>
+				<span class="d-block text-center">40+36 mm</span>
+				<span class="d-block text-center mb-3">￥&nbsp;2,870</span>
+				<span class="btn-label d-block text-center m-auto btn border">立即购买</span>
+			</div>
+		</div>
+
+	<!-- 日志 -->
+
+	<div class="widget-marv  position-relative mt-5">
+		<img src="./img/dw_index/618preheating-5-pc.jpg">
+		<div class="widget-marv-hero__inner position-absolute w-50 inner_right">
+			<div class="widget-marv-hero__inners m-auto text-center">
+				<h2 class="text-white">订单金额满500元可享</h2>
+				<h4 class="text-white">花呗限时6期免息</h4>
+				<h6 class="text-white">活动时间：7月10日-12月7日</h6>
+				<p class="btn_xg"><a href="" class="text-white">前往选购</a></p>
+			</div>
+		</div>
+	</div>
+
+  <div class="row mx-0">
+		<div class="col-12 px-0 widget-title">
+				<h2 class="text-center mt-5">日志</h2>
+				<h3 class="text-center mt-3 mb-5">DANIEL WELLINGTON的最新情报</h3>
+		</div>
+     <div class="col-sm-12 col-md-4 post-image">
+				<img src="./img/dw_index/blog-cover-0626.jpg">
+				<h6 class="mt-5 mb-5 pl-5">2019年7月12日</h6>
+				<h2 class="mt-5  mx-5 pb-4">DWLOOKBOOK|夏日新品全球限量首发</h2>
+				<span class="mt-4  mx-5 pb-4 d-block">解读你的白色迷情</span>
+				<p class="mt-2  mx-5 pb-4">阅读全部内容</p>
+		 </div>
+		 <div class="col-sm-12 col-md-4 post-image">
+				<img src="./img/dw_index/blog-cover-20190705-01.jpg">
+				<h6 class="mt-5 mb-5 pl-5">2019年7月12日</h6>
+				<h2 class="mt-5  mx-5 pb-4">DWMOMENTS|《调音师》主角演绎挚爱单品</h2>
+				<span class="mt-4  mx-5 pb-4 d-block">解读你的白色迷情</span>
+				<p class="mt-2  mx-5 pb-4">阅读全部内容</p>
+			</div>
+			<div class="col-sm-12 col-md-4 post-image">
+				<img src="./img/dw_index/blog-cover-20190617.jpg">
+				<h6 class="mt-5 mb-5 pl-5">2019年7月12日</h6>
+				<h2 class="mt-5  mx-5 pb-4">DW LOOK BOOK|如何把南法假日穿上身</h2>
+				<span class="mt-4  mx-5 pb-4 d-block">解读你的白色迷情</span>
+				<p class="mt-2  mx-5 pb-4">阅读全部内容</p>
+			</div>
+	</div>
+</div>
+	<!--底部-->
+<div>
+	<iframe src="footer.html" frameborder="0" scrolling="no" class="my_footer"></iframe>
+</div>
+</body>
+
 </html>

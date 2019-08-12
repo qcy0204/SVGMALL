@@ -1,0 +1,52 @@
+/* 所有大图片 */
+.header img,.widget-marv img,.widget-marv1 img{max-width:100%;min-width:100%;}
+/*首页导航*/
+.headers{height: 5.25rem;background: #192537}
+.header_img{padding-top:1.75rem}
+.header_img img{height: 20px;}
+.header__user,.header__cart{width: 35px;right: 100px;top:20px}
+.header__cart{right: 45px;}
+.header__user img,.header__cart img{width: 35px;height: 35px}
+
+/*导航条*/
+.nav_bg{
+	background:rgba(0,14,34,0.2);
+}
+.nav_bg ul li a{font-size:0.81rem;letter-spacing:2px;}
+.nav_bg  a span{
+  width:0px;
+	height:2px;
+	top:30px;
+	left:0;
+	right:0;
+	transition:.5s;
+}
+.nav_bg a:hover span{
+	width:90%;
+}
+
+/* 详情部分 */
+.container-fluid::before{content:"";display:table}
+
+.product-info-top{background:#939D9E}
+/* 左边 */
+.gallery-container img{width: 500px;height: 500px;} 
+
+
+/* 右边 */
+.action-container{
+  padding: 25px 70px;
+}
+.action-container span,.action-container h1,.action-container h3{font-family:"Futura Std";letter-spacing: 2px;}
+.action-container h1{font-size: 24px;letter-spacing: 8px;}
+.action-container h3{font-size: 13px}
+
+.color{height: 72px;}
+.size span{width: 30px;height: 30px;background: #479E7A;border-radius: 1.87rem;line-height: 30px}
+/* 立即购买 */
+.button,.pop-brand{background: #000E22;height: 50px;}
+.btn-price{width:200px}
+.atc-right{width:100px}
+.btn-price,.atc-right{font-size: 14px;color: #CDBC7A}
+.shipping-dates{font-size: 14px;}
+.pop-brand{background: #CDBC7A;line-height: 50px;font-size: 13px}
